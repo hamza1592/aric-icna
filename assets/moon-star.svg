@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <mask id="crescent-mask">
+      <rect width="40" height="34" fill="#ffffff" />
+      <circle cx="21" cy="14" r="10" fill="#000000" />
+    </mask>
+    <g id="moon-star">
+      <circle cx="14" cy="14" r="10" fill="#e8c468" mask="url(#crescent-mask)" />
+      <path
+        fill="#e8c468"
+        d="M31 2l1.4 3.1 3.4.4-2.5 2.4.6 3.4-3-1.8-3 1.8.6-3.4-2.5-2.4 3.4-.4z"
+      />
+    </g>
+    <path
+      id="lone-star"
+      fill="#e8c468"
+      d="M6 0l1.6 3.6 3.9.4-2.9 2.8.7 3.9-3.3-2-3.3 2 .7-3.9L.5 4l3.9-.4z"
+    />
+  </defs>
+
+  <use href="#moon-star" transform="translate(6,14) scale(0.85) rotate(-12)" />
+  <use href="#moon-star" transform="translate(120,4) scale(0.5) rotate(18)" />
+  <use href="#moon-star" transform="translate(216,36) scale(0.95) rotate(-6)" />
+  <use href="#moon-star" transform="translate(44,132) scale(0.6) rotate(22)" />
+  <use href="#moon-star" transform="translate(176,150) scale(1.05) rotate(-16)" />
+  <use href="#moon-star" transform="translate(258,182) scale(0.55) rotate(10)" />
+  <use href="#moon-star" transform="translate(92,224) scale(0.7) rotate(-20)" />
+  <use href="#moon-star" transform="translate(228,258) scale(0.55) rotate(8)" />
+
+  <use href="#lone-star" transform="translate(90,20) scale(1.4)" />
+  <use href="#lone-star" transform="translate(170,70) scale(0.9)" />
+  <use href="#lone-star" transform="translate(20,90) scale(1.1)" />
+  <use href="#lone-star" transform="translate(270,100) scale(1.3)" />
+  <use href="#lone-star" transform="translate(140,190) scale(1.0)" />
+  <use href="#lone-star" transform="translate(60,260) scale(1.2)" />
+  <use href="#lone-star" transform="translate(240,20) scale(0.8)" />
+  <use href="#lone-star" transform="translate(10,200) scale(0.9)" />
+  <use href="#lone-star" transform="translate(200,230) scale(1.1)" />
+</svg>

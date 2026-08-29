@@ -1,0 +1,24 @@
+{
+  "$schemaVersion": 1,
+  "mosque": {
+    "name": "ICNA Ar-Rehman Islamic Center",
+    "logo": "assets/logo.png"
+  },
+  "timezone": "America/Toronto",
+  "hijriDayOffset": 0,
+  "refresh": {
+    "reloadIntervalMinutes": 30
+  },
+  "jumuah": {
+    "note": "Limited Parking",
+    "times": [
+      { "label": "1st Jumuah", "time": "13:30" },
+      { "label": "2nd Jumuah", "time": "14:15" },
+      { "label": "3rd Jumuah", "time": "15:00" }
+    ]
+  },
+  "notices": [
+    "DO NOT PARK on the Fire Route. Vehicles will be towed or tagged at owner's expense.",
+    "Jazak Allah Khair for your continued support and donations."
+  ]
+}

@@ -1,0 +1,186 @@
+/* ---------- Prayer times table (left panel) ---------- */
+
+.prayer-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+}
+
+.prayer-header .logo {
+  width: 5vw;
+  height: 5vw;
+}
+
+.prayer-header .mosque-name {
+  font-family: var(--font-display);
+  font-size: 1.7vw;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.prayer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prayer-table thead th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6vw;
+  color: var(--color-panel-text-muted);
+  text-align: center;
+  padding-bottom: 1.4vh;
+}
+
+.prayer-table thead th:first-child {
+  text-align: left;
+}
+
+.prayer-table tbody tr {
+  border-bottom: 1px solid var(--color-panel-light-bg-alt);
+}
+
+.prayer-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.prayer-table td {
+  padding: 1.6vh 0.5vw;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.prayer-table td:first-child {
+  text-align: left;
+}
+
+.prayer-table .prayer-name {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  font-family: var(--font-display);
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+.prayer-table .prayer-icon {
+  font-size: 1.6vw;
+  color: var(--color-mosque-green);
+}
+
+.prayer-table .time-primary {
+  font-family: var(--font-display);
+  font-size: 2.6vw;
+  font-weight: 700;
+}
+
+.prayer-table .time-secondary {
+  font-size: 1.5vw;
+  color: var(--color-panel-text-muted);
+}
+
+.prayer-table .no-iqama {
+  color: var(--color-panel-text-muted);
+  font-size: 1.4vw;
+}
+
+.prayer-table .cell-subtitle {
+  display: block;
+  font-size: 1vw;
+  color: var(--color-panel-text-muted);
+  margin-bottom: 0.2vh;
+}
+
+.prayer-table tbody tr.is-next-prayer .prayer-name,
+.prayer-table tbody tr.is-next-prayer .time-primary {
+  color: var(--color-mosque-green);
+}
+
+/* ---------- Info panel (right side) ---------- */
+
+.clock-block {
+  text-align: right;
+  margin-top: 4vh;
+}
+
+.clock-block .clock {
+  font-family: var(--font-display);
+  font-size: 7.5vw;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.clock-block .clock .clock-period {
+  font-size: 3vw;
+  vertical-align: super;
+  margin-left: 0.3vw;
+}
+
+.clock-block .date-line {
+  margin-top: 0.6vh;
+  font-size: 1.3vw;
+  color: var(--color-panel-dark-text-muted);
+}
+
+.countdown-banner {
+  align-self: flex-end;
+  background: rgba(244, 249, 246, 0.12);
+  border: 1px solid var(--color-divider);
+  border-radius: 999px;
+  padding: 1.2vh 2vw;
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.countdown-banner .countdown-value {
+  color: var(--color-accent-gold);
+}
+
+.jumuah-block .section-title {
+  font-family: var(--font-display);
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+.jumuah-times {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.jumuah-time {
+  font-family: var(--font-display);
+  font-size: 2vw;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.jumuah-time .jumuah-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1vw;
+  font-weight: 400;
+  color: var(--color-panel-dark-text-muted);
+}
+
+.notices-block {
+  margin-top: auto;
+  font-size: 1.4vw;
+  font-weight: 600;
+  text-align: right;
+}
+
+.notices-block .notice-text {
+  transition: opacity 0.6s ease;
+}
+
+.notices-block .notice-text.is-fading {
+  opacity: 0;
+}

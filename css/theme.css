@@ -1,0 +1,19 @@
+:root {
+  --color-panel-light-bg: #eef2f0;
+  --color-panel-light-bg-alt: #e2e9e5;
+  --color-panel-text: #1c2b23;
+  --color-panel-text-muted: #5c6b63;
+
+  --color-mosque-green: #1f6e4a;
+  --color-mosque-green-dark: #16543a;
+  --color-panel-dark-text: #f4f9f6;
+  --color-panel-dark-text-muted: #cfe4d8;
+  --color-accent-gold: #e8c468;
+
+  --color-divider: rgba(244, 249, 246, 0.25);
+  --color-warning-bg: #fff4e0;
+  --color-warning-text: #7a4a00;
+
+  --font-display: "BulletinDisplay", "Segoe UI", system-ui, sans-serif;
+  --font-body: "BulletinBody", "Segoe UI", system-ui, sans-serif;
+}
